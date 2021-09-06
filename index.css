@@ -31,3 +31,8 @@ details[open] > summary {
   border-left: 4px solid red;
   padding-bottom: 1rem;
 }
+
+ul {
+  list-style-type: none;
+  line-height: 1.5;
+}
