@@ -35,19 +35,15 @@ details[open] > summary {
   padding-bottom: 1rem;
 }
 
-details > summary .substract {
-  display: none;
+details > summary::after {
+  content: '';
+  background-image: url('./plus.svg');
+  width: 24px;
+  height: 24px;
 }
 
-details[open] > summary .plus {
-  display: none;
-}
-
-details[open] > summary .substract {
-  display: block;
-}
-
-details:not([open]) > summary .substract {
+details[open] > summary::after {
+  background-image: url('./substract.svg');
 }
 
 ul {
