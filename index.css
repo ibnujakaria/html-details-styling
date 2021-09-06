@@ -1,14 +1,11 @@
-details {
-  transition: background-color .3s ease-in-out;
-}
-
 details > summary {
   padding: 1rem;
   list-style: none;
   cursor: pointer;
+  transition: background-color .3s ease-in-out;
 }
 
-details:hover {
+details:hover > summary {
   background-color: rgb(238, 238, 238);
 }
 
@@ -21,7 +18,7 @@ details:not(:last-child) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-details[open] {
+details[open] > summary {
   border-left: 4px solid red;
   padding-bottom: 1rem;
 }
