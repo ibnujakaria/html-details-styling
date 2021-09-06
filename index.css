@@ -1,3 +1,7 @@
+h1 {
+  text-align: center;
+}
+
 details > summary {
   padding: 1rem;
   list-style: none;
