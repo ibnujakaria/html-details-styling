@@ -1,3 +1,8 @@
+html, body {
+  font-family: 'Glory', sans-serif;
+  color: rgb(95, 95, 95);
+}
+
 h1 {
   text-align: center;
 }
