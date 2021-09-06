@@ -1,0 +1,27 @@
+details {
+  transition: background-color .3s ease-in-out;
+}
+
+details > summary {
+  padding: 1rem;
+  list-style: none;
+  cursor: pointer;
+}
+
+details:hover {
+  background-color: rgb(238, 238, 238);
+}
+
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+details[open] {
+  border-left: 4px solid red;
+  padding-bottom: 1rem;
+}
